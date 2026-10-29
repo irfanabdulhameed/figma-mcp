@@ -153,6 +153,23 @@ figma-cli memory list                            # every hub + newest entry
 
 Folder: `--dir`, else `$FIGMA_CLI_MEMORY_DIR`, else `./figma-memory`.
 
+## Read view-only files
+
+Works without edit access. Pulls a read-only snapshot, then answers from it,
+instance contents included. Full guide: [READ.md](READ.md).
+
+```bash
+figma-cli read pull <url> [--page "A,B" | --node 12:345]   # download layers (read-only)
+figma-cli read pages                                        # pages, and which were read
+figma-cli read tree [id] [--page A] [-d 3] [--expand] [--json]
+figma-cli read find "Button" [--type INSTANCE] [--expand]
+figma-cli read node "I12:345;67:89"                         # one layer, as JSON
+figma-cli read texts [id] [--page A] [--json]               # every visible text
+figma-cli read vars [--json]                                # variables per mode
+```
+
+Folder: `--dir`, else `$FIGMA_CLI_READ_DIR`, else `./figma-read`.
+
 ## Import (all sources)
 
 `figma-cli import <source>` accepts DESIGN.md files, Tailwind configs, CSS

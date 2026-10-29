@@ -26,9 +26,10 @@
 4. [How it connects: Yolo vs Safe mode](#how-it-connects-to-figma-yolo-vs-safe-mode)
 5. [Bring your own design system](#bring-your-own-design-system)
 6. [Export any Figma file as DESIGN.md](#export-any-figma-file-as-designmd)
-7. [figma-cli vs MCP servers](#figma-cli-vs-the-mcp-servers)
-8. [Everything it can do](#everything-it-can-do)
-9. [For developers](#for-developers)
+7. [Read files you can only view](#read-files-you-can-only-view)
+8. [figma-cli vs MCP servers](#figma-cli-vs-the-mcp-servers)
+9. [Everything it can do](#everything-it-can-do)
+10. [For developers](#for-developers)
 
 ---
 
@@ -160,6 +161,9 @@ Just say it in plain language. You never memorize commands — the AI knows them
 - "Switch this design from Stripe to Apple." *(swap a whole layout between brands)*
 - "Export this file's design system as markdown." *(any open file → `DESIGN.md`)*
 
+**Read files you only have view access to**
+- "Read this file: what's on the Checkout page?" / "List every text on this screen."
+
 **Polish & hand off**
 - "Check the color contrast / touch targets / text sizes."
 - "Export this as PNG / SVG."
@@ -226,6 +230,16 @@ What it's for:
 - **Learn from Community files** — extract Primer, Material or any public system and see exactly how it's built
 
 Huge files stay usable: when structure trees alone would blow an AI context window, they split into per-page files automatically and the main `DESIGN.md` stays loadable (Primer Web: 67 pages, 124k nodes → a 35k-token main file).
+
+---
+
+## Read files you can only view
+
+Figma hides its Plugin API in files you can only view, so tools that drive Figma (figma-cli included) can't even read them, and Dev Mode needs a paid seat. `figma-cli read` doesn't need either. Give it the file's link:
+
+> "Read this file, I only have view access: https://www.figma.com/design/…"
+
+It downloads the file's layers the way Figma Desktop does when it shows the file. It runs as you, from any open Figma tab, with read-only requests, so it never changes the file. It saves a local snapshot, and you can then ask for an outline, find layers by name, list every text, or get any layer as JSON. Text, overrides and swaps inside component instances are included, with the same layer ids the Plugin API uses. Checked against the Plugin API on 17,000+ layers. Guide and limits: [docs/READ.md](docs/READ.md).
 
 ---
 
@@ -299,6 +313,7 @@ Prefer to keep everything on your machine? figma-cli also works with **local LLM
 - Export **PNG, SVG, JSX**, Storybook stories, CSS variables, Tailwind config, **DTCG / W3C tokens JSON**
 - Link components to **Storybook / GitHub / docs**, inline annotations
 - Recreate a live webpage in Figma from a URL
+- **Read files you can only view** (no edit access or Dev seat): outline, find, every text, any layer as JSON
 
 **🤖 Built for AI**
 - Works with **Claude Code, Cursor, or Codex** — one `figma-cli init-agent` sets up the rules for all of them (`AGENTS.md` + Cursor rules)

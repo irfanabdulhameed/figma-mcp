@@ -104,3 +104,11 @@ Keep one hub note per Figma file so later sessions know what happened there:
 `figma-cli memory show` before answering "what did we do on this file",
 `figma-cli memory log "<what you did, with ids>"` after any task that changes
 it. See docs/MEMORY.md.
+
+## Files you can only view
+
+Figma hides its Plugin API in files you can only view, so other commands fail
+there ("Could not find Figma execution context"). Read the file instead:
+`figma-cli read pull <url>` (add `--page` / `--node` on big files), then
+`read tree`, `read find`, `read texts`, `read node <id>`. It is read-only and
+needs no edit access or Dev seat. See docs/READ.md.

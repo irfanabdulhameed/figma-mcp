@@ -162,7 +162,7 @@ export class FigmaClient {
             }
           }
 
-          reject(new Error('Could not find Figma execution context. Make sure a design file is open.'));
+          reject(new Error('Could not find Figma execution context. Make sure a design file is open. If you can only view this file, read it with `figma-cli read pull` (docs/READ.md).'));
         } catch (err) {
           reject(err);
         }

@@ -62,6 +62,12 @@ figma-cli node to-component "<id>"     # promote to a component
 figma-cli verify "<id>" --measure      # screenshot + dimensions
 figma-cli a11y audit                   # contrast / touch / text checks
 \`\`\`
+
+## Files you can only view
+Commands that read or change a file need edit access (Figma hides its Plugin API
+in view-only files). With view access, read the file instead:
+\`figma-cli read pull <url>\` (\`--page\` / \`--node\` on big files), then
+\`read tree\`, \`read find\`, \`read texts\`, \`read node <id>\`. Read-only. See docs/READ.md.
 `;
 
 function writeFile(path, content, force) {

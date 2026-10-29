@@ -27,6 +27,7 @@ import './commands/spec.js';
 import './commands/instantiate.js';
 import './commands/init.js';
 import './commands/memory.js';
+import './commands/read.js';
 import { program, registerPageOption } from './lib/cli-core.js';
 
 // Every group is registered by now, so --page can be attached in one sweep.

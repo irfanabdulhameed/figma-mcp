@@ -53,6 +53,7 @@ CLI that controls Figma Desktop directly. No API key needed.
 | "export tokens as CSS / Tailwind" | `figma-cli export css` / `figma-cli export tailwind` |
 | "load our storybook" | `figma-cli import http://localhost:6006` |
 | "what did we do on this file?" | `figma-cli memory show` (or `memory show "File"`) |
+| "I only have view access" / "read this file" / commands fail with "Could not find Figma execution context" | `figma-cli read pull <url>` (add `--page` / `--node` on big files), then `read tree` / `find` / `texts` / `node` (docs/READ.md) |
 | (after any task that changes a file) | `figma-cli memory log "what you did, with ids"` |
 
 **Wallpaper palette tip:** for rich results pass **5-6 hue-diverse colors** (mix warm + cool + a bright accent), not shades of one color. Analogous palettes blend into a flat 2-tone wash. The command auto-adds a depth anchor + focal glow, and `--style auto` rotates compositions (scatter/diagonal/bands/drift/spotlight/corners). For N wallpapers, run it N times with different palettes + styles. Add `--grain` for subtle film-grain NOISE or `--texture` for paper grain over the wallpaper.
