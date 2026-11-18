@@ -8,6 +8,10 @@
 **figma-cli lets Claude Code, Cursor and Codex build real, editable designs in Figma: frames, components, variants and variables.** It is a Figma MCP alternative that drives Figma Desktop directly on your machine, so it needs no Figma API key and has no rate limits.
 
 <p align="center">
+  <img src="assets/demo.gif" width="100%" alt="Demo: figma-cli builds three pricing cards (Starter, Pro, Team) in Figma Desktop one render command at a time, then turns them into components. Each frame is Figma's own export of the canvas after that command ran.">
+</p>
+
+<p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT license"></a>
   <img src="https://img.shields.io/badge/node-%3E%3D18-339933?logo=node.js&logoColor=white" alt="Node.js 18 or newer">
   <img src="https://img.shields.io/badge/Figma-Desktop-purple" alt="Figma Desktop">
