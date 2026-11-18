@@ -22,8 +22,8 @@
 <text x="814" y="100" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="17" font-weight="500" fill="#F3F1EC" text-anchor="start">Create three pricing cards.</text>
 <line x1="992.0" y1="120" x2="992.0" y2="186" stroke="#FF6B40" stroke-width="2" stroke-dasharray="4 5"/>
 <path d="M986.0 180 L992.0 188 L998.0 180" fill="none" stroke="#FF6B40" stroke-width="2"/>
-<rect x="1006.0" y="140" width="222" height="26" rx="6" fill="#111014" stroke="#34313A" stroke-width="1"/>
-<text x="1018.0" y="158" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="500" fill="#A6A2AD" text-anchor="start">figma-cli · on your Mac/PC</text>
+<rect x="1006.0" y="140" width="212" height="26" rx="6" fill="#111014" stroke="#34313A" stroke-width="1"/>
+<text x="1018.0" y="158" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="500" fill="#A6A2AD" text-anchor="start">figma-cli · on your machine</text>
 <rect x="772" y="228" width="136" height="196" rx="12" fill="#1B1A20" stroke="#34313A" stroke-width="1.5"/>
 <text x="788" y="258" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#A6A2AD" text-anchor="start">Starter</text>
 <text x="788" y="296" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#F3F1EC" text-anchor="start" letter-spacing="-0.5">$0</text>
