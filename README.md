@@ -1,6 +1,16 @@
-# figma-cli
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
+  <img src="assets/hero-light.svg" width="100%" alt="figma-cli: you type 'Create three pricing cards.' to your AI assistant, and figma-cli builds three real, editable pricing card components in Figma Desktop.">
+</picture>
+
+# figma-cli: AI design automation for Figma Desktop
+
+**figma-cli lets Claude Code, Cursor and Codex build real, editable designs in Figma: frames, components, variants and variables.** It is a Figma MCP alternative that drives Figma Desktop directly on your machine, so it needs no Figma API key and has no rate limits.
 
 <p align="center">
+  <a href="https://github.com/irfanabdulhameed/figma-mcp/actions/workflows/test.yml"><img src="https://github.com/irfanabdulhameed/figma-mcp/actions/workflows/test.yml/badge.svg" alt="Tests"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT license"></a>
+  <img src="https://img.shields.io/badge/node-%3E%3D18-339933?logo=node.js&logoColor=white" alt="Node.js 18 or newer">
   <img src="https://img.shields.io/badge/Figma-Desktop-purple" alt="Figma Desktop">
   <img src="https://img.shields.io/badge/No_API_Key-Required-green" alt="No API Key">
   <img src="https://img.shields.io/badge/No_MCP-Required-green" alt="No MCP Required">
@@ -30,6 +40,7 @@
 8. [figma-cli vs MCP servers](#figma-cli-vs-the-mcp-servers)
 9. [Everything it can do](#everything-it-can-do)
 10. [For developers](#for-developers)
+11. [FAQ](#faq)
 
 ---
 
@@ -247,6 +258,11 @@ It downloads the file's layers the way Figma Desktop does when it shows the file
 
 How does this differ from **Figma's official MCP** and **figma-console-mcp**? Short version: they talk to Figma through the **cloud REST API**; figma-cli talks to **Figma Desktop directly on your machine**. That one choice changes everything downstream.
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/how-it-works-dark.svg">
+  <img src="assets/how-it-works-light.svg" width="100%" alt="How figma-cli works: you talk to an AI assistant (Claude Code, Cursor or Codex), which runs figma-cli, which drives Figma Desktop over CDP or a plugin, all on your machine with no API token or rate limit. API-based MCP servers instead send each request through an MCP server to the Figma REST API in the cloud, which needs a token and is rate limited.">
+</picture>
+
 | | **figma-cli** | Figma official MCP / figma-console-mcp |
 |---|---|---|
 | **How it connects** | CDP → your local Figma Desktop | Figma REST API (cloud) |
@@ -345,6 +361,28 @@ You don't need any of this to use the tool — it's here for tinkerers.
 Figma plugins are slow to build and tied to one UI. AI assistants are great at *describing intent* but need a clean way to act on Figma. figma-cli is the bridge: it talks to Figma Desktop directly, so you can design by conversation — locally, with no API key and no cloud roundtrip.
 
 **You design. The AI builds. Figma updates.**
+
+---
+
+## FAQ
+
+**Is figma-cli a Figma MCP server?**
+No. It is a command-line tool your AI assistant runs directly. It does the job people use a Figma MCP server for (letting an AI read and edit Figma), but it talks to Figma Desktop on your machine instead of the Figma REST API. See [figma-cli vs the MCP servers](#figma-cli-vs-the-mcp-servers).
+
+**Do I need a Figma API key or token?**
+No. figma-cli never calls the Figma API, so there is no token to create and no rate limit to hit. It also works offline.
+
+**Which AI assistants does it work with?**
+Claude Code, Cursor and Codex, set up with one `figma-cli init-agent`. It also works with local models through LM Studio or Ollama.
+
+**Can it read Figma files I can only view?**
+Yes. `figma-cli read` downloads a view-only file's layers as you, from any open Figma tab, without a Dev Mode seat. See [docs/READ.md](docs/READ.md).
+
+**Can it turn my design system into something an AI can use?**
+Yes. `figma-cli extract` writes a `DESIGN.md` with the file's tokens, variables and components, and `figma-cli import` loads a `DESIGN.md`, Tailwind config, CSS variables or design-tokens JSON into Figma as real variables.
+
+**Is the Figma Desktop patch safe?**
+Yolo mode applies a small, reversible patch so the CLI can talk to Figma directly, and nothing leaves your machine. If you can't allow that, Safe mode uses a plugin instead and doesn't touch the app. See [Yolo vs Safe mode](#how-it-connects-to-figma-yolo-vs-safe-mode).
 
 ---
 

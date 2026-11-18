@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="500" viewBox="0 0 1280 500" role="img" aria-labelledby="t d">
+<title id="t">figma-cli: talk in plain English, watch Figma build</title>
+<desc id="d">A sentence typed to an AI assistant, "Create three pricing cards.", passes through figma-cli on your machine and becomes three real, editable pricing card components in Figma Desktop.</desc>
+<rect width="1280" height="500" fill="#111014"/>
+<defs><pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="1.5" r="1.2" fill="#34313A"/></pattern></defs>
+<rect x="724" y="0" width="556" height="500" fill="url(#g)"/>
+<text x="72" y="92" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="20" font-weight="700" fill="#FF6B40" text-anchor="start">figma-cli</text>
+<text x="72" y="168" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="50" font-weight="700" fill="#F3F1EC" text-anchor="start" letter-spacing="-1.2">Talk in plain English.</text>
+<text x="72" y="230" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="50" font-weight="700" fill="#F3F1EC" text-anchor="start" letter-spacing="-1.2">Watch Figma build.</text>
+<text x="72" y="288" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#A6A2AD" text-anchor="start">Your AI assistant builds real frames, components and</text>
+<text x="72" y="318" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#A6A2AD" text-anchor="start">variables in Figma Desktop. Locally, with no API key</text>
+<text x="72" y="348" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#A6A2AD" text-anchor="start">and no rate limits.</text>
+<text x="72" y="410" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#8E8A95" text-anchor="start">Works in</text>
+<rect x="144" y="391" width="108.19999999999999" height="28" rx="14" fill="none" stroke="#34313A" stroke-width="1.5"/>
+<text x="198.1" y="410" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#F3F1EC" text-anchor="middle">Claude Code</text>
+<rect x="260.2" y="391" width="67.19999999999999" height="28" rx="14" fill="none" stroke="#34313A" stroke-width="1.5"/>
+<text x="293.79999999999995" y="410" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#F3F1EC" text-anchor="middle">Cursor</text>
+<rect x="335.4" y="391" width="59.0" height="28" rx="14" fill="none" stroke="#34313A" stroke-width="1.5"/>
+<text x="364.9" y="410" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#F3F1EC" text-anchor="middle">Codex</text>
+<rect x="772" y="68" width="440" height="52" rx="12" fill="#1B1A20" stroke="#34313A" stroke-width="1.5"/>
+<text x="792" y="100" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="20" font-weight="700" fill="#FF6B40" text-anchor="start">›</text>
+<text x="814" y="100" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="17" font-weight="500" fill="#F3F1EC" text-anchor="start">Create three pricing cards.</text>
+<line x1="992.0" y1="120" x2="992.0" y2="186" stroke="#FF6B40" stroke-width="2" stroke-dasharray="4 5"/>
+<path d="M986.0 180 L992.0 188 L998.0 180" fill="none" stroke="#FF6B40" stroke-width="2"/>
+<rect x="1006.0" y="140" width="222" height="26" rx="6" fill="#111014" stroke="#34313A" stroke-width="1"/>
+<text x="1018.0" y="158" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="500" fill="#A6A2AD" text-anchor="start">figma-cli · on your Mac/PC</text>
+<rect x="772" y="228" width="136" height="196" rx="12" fill="#1B1A20" stroke="#34313A" stroke-width="1.5"/>
+<text x="788" y="258" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#A6A2AD" text-anchor="start">Starter</text>
+<text x="788" y="296" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#F3F1EC" text-anchor="start" letter-spacing="-0.5">$0</text>
+<rect x="788" y="318" width="88" height="6" rx="3" fill="#24222A"/>
+<rect x="788" y="334" width="72" height="6" rx="3" fill="#24222A"/>
+<rect x="788" y="350" width="80" height="6" rx="3" fill="#24222A"/>
+<rect x="788" y="378" width="104" height="30" rx="15" fill="none" stroke="#34313A" stroke-width="1.5"/>
+<rect x="818.0" y="390" width="44" height="6" rx="3" fill="#34313A"/>
+<rect x="924" y="228" width="136" height="196" rx="12" fill="#1B1A20" stroke="#FF6B40" stroke-width="2"/>
+<text x="940" y="258" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#A6A2AD" text-anchor="start">Pro</text>
+<text x="940" y="296" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#F3F1EC" text-anchor="start" letter-spacing="-0.5">$12</text>
+<rect x="940" y="318" width="88" height="6" rx="3" fill="#24222A"/>
+<rect x="940" y="334" width="72" height="6" rx="3" fill="#24222A"/>
+<rect x="940" y="350" width="80" height="6" rx="3" fill="#24222A"/>
+<rect x="940" y="378" width="104" height="30" rx="15" fill="#FF6B40" stroke="none" stroke-width="1.5"/>
+<rect x="970.0" y="390" width="44" height="6" rx="3" fill="#16151A"/>
+<rect x="920" y="224" width="8" height="8" fill="#1B1A20" stroke="#FF6B40" stroke-width="1.5"/>
+<rect x="1056" y="224" width="8" height="8" fill="#1B1A20" stroke="#FF6B40" stroke-width="1.5"/>
+<rect x="920" y="420" width="8" height="8" fill="#1B1A20" stroke="#FF6B40" stroke-width="1.5"/>
+<rect x="1056" y="420" width="8" height="8" fill="#1B1A20" stroke="#FF6B40" stroke-width="1.5"/>
+<rect x="924" y="202" width="104" height="20" rx="4" fill="#FF6B40"/>
+<text x="932" y="216" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="600" fill="#16151A" text-anchor="start">Component</text>
+<rect x="1076" y="228" width="136" height="196" rx="12" fill="#1B1A20" stroke="#34313A" stroke-width="1.5"/>
+<text x="1092" y="258" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#A6A2AD" text-anchor="start">Team</text>
+<text x="1092" y="296" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#F3F1EC" text-anchor="start" letter-spacing="-0.5">$29</text>
+<rect x="1092" y="318" width="88" height="6" rx="3" fill="#24222A"/>
+<rect x="1092" y="334" width="72" height="6" rx="3" fill="#24222A"/>
+<rect x="1092" y="350" width="80" height="6" rx="3" fill="#24222A"/>
+<rect x="1092" y="378" width="104" height="30" rx="15" fill="none" stroke="#34313A" stroke-width="1.5"/>
+<rect x="1122.0" y="390" width="44" height="6" rx="3" fill="#34313A"/>
+</svg>

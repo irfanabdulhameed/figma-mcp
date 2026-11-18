@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="620" viewBox="0 0 1280 620" role="img" aria-labelledby="t d">
+<title id="t">How figma-cli connects to Figma, compared with API-based MCP servers</title>
+<desc id="d">figma-cli: you talk to an AI assistant (Claude Code, Cursor or Codex), it runs figma-cli, which drives Figma Desktop directly on your machine over the Chrome DevTools Protocol or a plugin. No token, no rate limit, works offline. API-based MCP servers instead go from the assistant through an MCP server to the Figma REST API in the cloud, which needs a token and is rate limited.</desc>
+<rect width="1280" height="620" fill="#111014"/>
+<text x="64" y="64" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="20" font-weight="700" fill="#FF6B40" text-anchor="start">figma-cli</text>
+<text x="180" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" font-weight="400" fill="#A6A2AD" text-anchor="start">everything stays on your machine</text>
+<rect x="48" y="88" width="1184" height="232" rx="18" fill="none" stroke="#FF6B40" stroke-width="1.5" stroke-dasharray="6 6"/>
+<text x="1212" y="114" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="700" fill="#FF6B40" text-anchor="end" letter-spacing="1.5">YOUR MACHINE</text>
+<rect x="80" y="150" width="210" height="96" rx="12" fill="#1B1A20" stroke="#34313A" stroke-width="1.5"/>
+<text x="185.0" y="194.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#F3F1EC" text-anchor="middle">You</text>
+<text x="185.0" y="218.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#A6A2AD" text-anchor="middle">say it in plain English</text>
+<rect x="380" y="150" width="210" height="96" rx="12" fill="#1B1A20" stroke="#34313A" stroke-width="1.5"/>
+<text x="485.0" y="194.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#F3F1EC" text-anchor="middle">AI assistant</text>
+<text x="485.0" y="218.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#A6A2AD" text-anchor="middle">Claude Code · Cursor · Codex</text>
+<rect x="680" y="150" width="210" height="96" rx="12" fill="#1B1A20" stroke="#FF6B40" stroke-width="2"/>
+<text x="785.0" y="194.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#F3F1EC" text-anchor="middle">figma-cli</text>
+<text x="785.0" y="218.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#A6A2AD" text-anchor="middle">short commands, small context</text>
+<rect x="980" y="150" width="210" height="96" rx="12" fill="#1B1A20" stroke="#34313A" stroke-width="1.5"/>
+<text x="1085.0" y="194.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#F3F1EC" text-anchor="middle">Figma Desktop</text>
+<text x="1085.0" y="218.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#A6A2AD" text-anchor="middle">real, editable layers</text>
+<line x1="290" y1="198.0" x2="378" y2="198.0" stroke="#F3F1EC" stroke-width="2"/>
+<path d="M371 192.0 L380 198.0 L371 204.0" fill="none" stroke="#F3F1EC" stroke-width="2"/>
+<line x1="590" y1="198.0" x2="678" y2="198.0" stroke="#F3F1EC" stroke-width="2"/>
+<path d="M671 192.0 L680 198.0 L671 204.0" fill="none" stroke="#F3F1EC" stroke-width="2"/>
+<line x1="890" y1="198.0" x2="978" y2="198.0" stroke="#FF6B40" stroke-width="2"/>
+<path d="M971 192.0 L980 198.0 L971 204.0" fill="none" stroke="#FF6B40" stroke-width="2"/>
+<text x="935.0" y="186.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="500" fill="#A6A2AD" text-anchor="middle">CDP/plugin</text>
+<rect x="80" y="270" width="115.19999999999999" height="28" rx="14" fill="#24222A"/>
+<text x="137.6" y="289" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#F3F1EC" text-anchor="middle">No API token</text>
+<rect x="205.2" y="270" width="122.8" height="28" rx="14" fill="#24222A"/>
+<text x="266.59999999999997" y="289" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#F3F1EC" text-anchor="middle">No rate limit</text>
+<rect x="338.0" y="270" width="122.8" height="28" rx="14" fill="#24222A"/>
+<text x="399.4" y="289" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#F3F1EC" text-anchor="middle">Works offline</text>
+<rect x="470.8" y="270" width="153.2" height="28" rx="14" fill="#24222A"/>
+<text x="547.4" y="289" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#F3F1EC" text-anchor="middle">Yolo or Safe mode</text>
+<text x="64" y="384" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#A6A2AD" text-anchor="start">API-based MCP servers</text>
+<text x="300" y="384" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" font-weight="400" fill="#8E8A95" text-anchor="start">for comparison</text>
+<line x1="48" y1="408" x2="1232" y2="408" stroke="#34313A" stroke-width="1"/>
+<rect x="80" y="448" width="210" height="96" rx="12" fill="#111014" stroke="#34313A" stroke-width="1.5"/>
+<text x="185.0" y="492.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#A6A2AD" text-anchor="middle">You</text>
+<text x="185.0" y="516.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#8E8A95" text-anchor="middle">same request</text>
+<rect x="380" y="448" width="210" height="96" rx="12" fill="#111014" stroke="#34313A" stroke-width="1.5"/>
+<text x="485.0" y="492.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#A6A2AD" text-anchor="middle">AI assistant</text>
+<text x="485.0" y="516.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#8E8A95" text-anchor="middle">loads many tool schemas</text>
+<line x1="290" y1="496.0" x2="378" y2="496.0" stroke="#8E8A95" stroke-width="2" stroke-dasharray="4 5"/>
+<path d="M371 490.0 L380 496.0 L371 502.0" fill="none" stroke="#8E8A95" stroke-width="2"/>
+<rect x="680" y="448" width="210" height="96" rx="12" fill="#111014" stroke="#34313A" stroke-width="1.5"/>
+<text x="785.0" y="492.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#A6A2AD" text-anchor="middle">MCP server</text>
+<text x="785.0" y="516.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#8E8A95" text-anchor="middle">verbose JSON replies</text>
+<rect x="980" y="448" width="210" height="96" rx="12" fill="#111014" stroke="#34313A" stroke-width="1.5"/>
+<text x="1085.0" y="492.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#A6A2AD" text-anchor="middle">Figma REST API</text>
+<text x="1085.0" y="516.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#8E8A95" text-anchor="middle">in the cloud</text>
+<line x1="590" y1="496.0" x2="678" y2="496.0" stroke="#8E8A95" stroke-width="2" stroke-dasharray="4 5"/>
+<path d="M671 490.0 L680 496.0 L671 502.0" fill="none" stroke="#8E8A95" stroke-width="2"/>
+<line x1="890" y1="496.0" x2="978" y2="496.0" stroke="#8E8A95" stroke-width="2" stroke-dasharray="4 5"/>
+<path d="M971 490.0 L980 496.0 L971 502.0" fill="none" stroke="#8E8A95" stroke-width="2"/>
+<text x="935.0" y="484.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="500" fill="#8E8A95" text-anchor="middle">internet</text>
+<text x="1085.0" y="574" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#A6A2AD" text-anchor="middle">token required · rate limited</text>
+</svg>
